@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday! ♡</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sparkle" style="top:8%;left:8%;font-size:24px">✦</div>
+<div class="sparkle" style="top:17%;right:9%;font-size:28px">♡</div>
+<div class="sparkle" style="bottom:15%;left:12%;font-size:25px">✧</div>
+<div class="sparkle" style="bottom:10%;right:11%;font-size:22px">🌷</div>
+
+
+<div class="floating-decor decor-sparkle" style="top:7%;left:7%;font-size:25px">✦</div>
+<div class="floating-decor" style="top:24%;right:7%;font-size:25px;color:#d88ab0">♡</div>
+<div class="floating-decor decor-flower" style="top:39%;left:5%;font-size:23px">🌸</div>
+<div class="floating-decor" style="top:58%;right:6%;font-size:22px">🌸</div>
+<div class="floating-decor" style="bottom:17%;left:8%;font-size:24px">💗</div>
+<div class="floating-decor decor-flower" style="bottom:9%;right:12%;font-size:24px">💗</div>
+<div class="floating-decor" style="top:74%;right:19%;font-size:17px;color:#c39bdc">✧</div>
+<div class="floating-decor" style="top:12%;left:22%;font-size:14px;color:#e7a2bd">♡</div>
+
+<section class="page active" id="page1">
+  <div class="eyebrow">a little something for you ✧</div>
+  <h1>Happy Birthday Kalee!<br>♡</h1>
+  <p class="subtitle">Ada surat kecil buat anak kecik hari ini.<br>Coba diklik amplopnya, yaa!</p>
+  <div class="envelope-wrap" id="envelopeWrap" role="button" tabindex="0" aria-label="Buka surat ulang tahun" onclick="openLetter()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLetter()}">
+    <div class="envelope"></div>
+    <div class="letter">
+      <div class="mini">💌</div>
+      <strong>Dear, <span data-name>Kale nyanyuk</span> ♡</strong>
+      <p style="font-size:.88rem;margin:8px 0">Selamat ulang tahun, yaa kalee nyanyuk 🎂</p>
+      <p style="font-size:.84rem;margin:6px 0">Semoga hari-harimu dipenuhi hal baik, biar bahagia terus, ketawa terus, dan selalu tersenyum. Semoga semua impianmu pelan-pelan tercapai dan juga ingat yaa selalu bangga sama diri sendiri, ya!</p>
+      <p style="font-size:.9rem;margin:8px 0">dari organs proplayer ganteng dan dingin seperti alucard, ♡</p>
+    </div>
+    <div class="flap"></div>
+    <div class="seal" aria-hidden="true">♥</div>
+  </div>
+  <div class="hint" id="hint">👆 tekan amplopnya nyak</div>
+  <button class="btn next-btn" id="letterNext" disabled onclick="goTo(2)">Next →</button>
+  <div class="footer">made with ♡ just for you</div>
+</section>
+
+<section class="page" id="page2">
+  <div class="eyebrow">little snaps, core memories</div>
+  <h2>Our Photo Dumb📸</h2>
+  <p class="subtitle">ada beberapa foto momen kita nich bisa bikin kamu senyum pastinya asik, ga ada foto irl sih mungkin nextnya ada kiwkiw 👉👈 awaawlawl jadi pake poto rosbloks mwehehe</p>
+  
+<div class="gallery">
+  <div class="photo-card" style="--rot:-2deg">
+    <img src="assets/foto2.png" alt="Kenangan pertama">
+    <p>“Momen pertama kali gunung bareng”</p>
+  </div>
+
+  <div class="photo-card" style="--rot:2deg">
+    <img src="assets/foto1.png" alt="Kenangan kedua">
+    <p>“Momen gendong kale kecik😋”</p>
+  </div>
+
+  <div class="photo-card" style="--rot:-1deg">
+    <img src="assets/foto4.png" alt="Kenangan ketiga">
+    <p>“Momen jadi organs(orang ganteng)”</p>
+  </div>
+
+  <div class="photo-card" style="--rot:3deg">
+    <img src="assets/foto3.png" alt="Kenangan keempat">
+    <p>“Malah jadi zepetto wok🤪”</p>
+  </div>
+
+  <div class="photo-card" style="--rot:-3deg">
+    <img src="assets/foto5.png" alt="Kenangan kelima">
+    <p>“Momen ups no komen🤭”</p>
+  </div>
+
+  <div class="photo-card" style="--rot:1deg">
+    <img src="assets/foto6.png" alt="Kenangan keenam">
+    <p>“Momen kale ketemu temennya”</p>
+  </div>
+</div>
+
+  <div class="note">
+    <p style="margin-top:0">Untuk <strong><span data-name>Kale nyanyuk</span></strong> 🌼</p>
+    <p>Terima kasih sudah jadi diri kamu sendiri. Semoga umur yang baru ini membawa banyak kesempatan, kesehatan, ketenangan, dan alasan baru untuk tersenyum. Kalau ada hari yang terasa berat, semoga kamu selalu ingat bahwa kamu berharga dan nggak harus menghadapi semuanya sendirian. 💗</p>
+    <p style="margin-bottom:0">Keep shining, kalee nyanyuk! 🌟</p>
+  </div>
+  <button class="btn next-btn" onclick="goTo(3)">Ada satu hal lagi… 🎁</button>
+  <button class="btn secondary next-btn" onclick="goTo(1)" style="margin-top:10px">← Kembali ke surat</button>
+</section>
+
+<section class="page" id="page3">
+  <div class="eyebrow">one last surprise</div>
+  <h2 id="giftHeading">Wait… ada hadiah ni buat kamuu 🎀</h2>
+  <p class="subtitle" id="giftSubtitle">Katanya, birthday belum lengkap kalau gk dikasih kejutan kecil kelazzz Coba klik kadonya coba!</p>
+  <div class="gift-stage">
+    <button class="gift" aria-label="Buka konfirmasi kado" onclick="showGiftModal()"><img class="gift-image" src="assets/gift.png" alt="Kado ulang tahun dengan pita merah muda"></button>
+    <p style="margin-top:0">klik kadonya, nanti kumuah2 ♡</p>
+  </div>
+  <div class="delivery-scene" id="deliveryScene" aria-label="Kurir sedang mengantar kado">
+    <div class="delivery-motion">
+      <svg class="delivery-svg" viewBox="0 0 360 220" role="img" aria-label="Kurir mengendarai skuter sambil membawa paket">
+        <ellipse cx="183" cy="191" rx="112" ry="10" fill="#d88eac" opacity=".18"/>
+        <path class="speed-line" d="M27 126 H75 M14 145 H61 M43 164 H79" stroke="#e98bb0" stroke-width="4" stroke-linecap="round" fill="none"/>
+        <circle cx="123" cy="164" r="27" fill="#fff8fb" stroke="#65445b" stroke-width="7"/><circle cx="123" cy="164" r="10" fill="#f58eb1" stroke="#65445b" stroke-width="4"/>
+        <circle cx="253" cy="164" r="27" fill="#fff8fb" stroke="#65445b" stroke-width="7"/><circle cx="253" cy="164" r="10" fill="#f58eb1" stroke="#65445b" stroke-width="4"/>
+        <path d="M122 159 L146 126 Q152 119 163 125 L209 147 L245 151 L253 164 L151 164 Z" fill="#f48caf" stroke="#65445b" stroke-width="5" stroke-linejoin="round"/>
+        <path d="M207 146 L224 116 L247 116 L257 126 M221 116 L234 108 L250 108" fill="none" stroke="#65445b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M143 128 Q160 139 183 140" fill="none" stroke="#ffd5e2" stroke-width="5" stroke-linecap="round"/><circle cx="258" cy="132" r="6" fill="#ffe59a" stroke="#65445b" stroke-width="3"/>
+        <path d="M177 95 Q181 79 199 83 L219 112 L203 130 L177 116 Z" fill="#a98be8" stroke="#65445b" stroke-width="4" stroke-linejoin="round"/>
+        <path d="M188 112 L171 142 L151 145 M207 119 L225 126" fill="none" stroke="#65445b" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="185" cy="67" r="22" fill="#ffd8bd" stroke="#65445b" stroke-width="4"/><path d="M163 66 Q164 39 188 41 Q208 42 211 62 L194 60 L181 52 L173 67 Z" fill="#f46f9c" stroke="#65445b" stroke-width="4" stroke-linejoin="round"/>
+        <g class="parcel-bounce"><rect x="222" y="62" width="53" height="48" rx="5" fill="#ffd8a5" stroke="#65445b" stroke-width="4"/><path d="M248 63 V109 M223 78 H274" stroke="#f16f9c" stroke-width="9"/><path d="M247 63 C229 51 237 43 247 54 C258 42 268 52 249 63" fill="#f16f9c" stroke="#65445b" stroke-width="3" stroke-linejoin="round"/><path d="M233 88 l6 6 l11 -13" fill="none" stroke="#fffaf3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g>
+        <text x="292" y="73" font-size="20" class="delivery-heart">♥</text><text x="80" y="92" font-size="15" class="delivery-heart heart-two">♥</text>
+      </svg>
+    </div>
+    <div class="delivery-caption">paket spesial sedang meluncur! 🚚💗</div>
+  </div>
+  <div class="note" id="giftNote" style="display:none">
+    <p>Semoga kejutan kecil ni bisa bikin hari kamu sedikit lebih manis. tapi buat sekarang, simpan rasa penasarannya dulu, yaa… 👀💌</p>
+  </div>
+  <button class="btn secondary next-btn" onclick="goTo(2)">← Lihat foto lagi</button>
+  <div class="footer">the end… or maybe just the beginning? ♡</div>
+</section>
+
+<div class="modal-backdrop" id="giftModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal">
+    <div style="font-size:2.6rem;margin-bottom:8px">🎁💝</div>
+    <h3 id="modalTitle">Konfirmasi kejutan!</h3>
+    <p id="modalText">Kamu yakin mau menerima kado spesial ini? 👀</p>
+    <div class="modal-actions" id="modalActions">
+      <button class="btn" onclick="confirmGift()">Yakin dong! 💗</button>
+      <button class="btn secondary" onclick="closeGiftModal()">Nanti dulu 🙈</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
